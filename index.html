@@ -10,8 +10,54 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    <div class="menu-burger">
+        <button type="button" class="menu-burger__close">
+            <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"/></svg>
+        </button>
+        
+        <div class="header__actions">
+            <a href="#" class="header__actions__item header__search">
+                <img src="img/search@2x.png" alt=""> 
+            </a>
+
+            <a href="#" class="header__actions__item header__currency">
+                rub
+            </a>
+
+            <a href="#" class="header__actions__item header__language">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="27px" height="15px"
+                >
+                    <path fill-rule="evenodd"  fill="rgb(229, 0, 81)"
+                    d="M0.440,9.1000 L26.436,9.1000 L26.436,14.999 L0.440,14.999 L0.440,9.1000 Z"/>
+                    <path fill-rule="evenodd"  fill="rgb(0, 156, 255)"
+                    d="M0.440,4.999 L26.436,4.999 L26.436,9.1000 L0.440,9.1000 L0.440,4.999 Z"/>
+                    <path fill-rule="evenodd"  fill="rgb(233, 237, 243)"
+                    d="M0.440,-0.001 L26.436,-0.001 L26.436,4.999 L0.440,4.999 L0.440,-0.001 Z"/>
+                </svg>
+            </a>
+
+            <a href="#" class="header__login">
+                <img src="img/avatar@2x.png" alt="">
+                <span>Войти</span>
+            </a>
+        </div>
+        <nav class="header__nav">
+            <a href="#">Поиск билетов</a>
+            <a href="#">Транспорт на карте</a>
+            <a href="#">Справочный центр</a>
+            <a href="#">О системе</a>
+        </nav>
+
+
+
+        <a href="tel:88005555555" class="header__phone">8 800 555 55 55</a>
+    </div>
+
     <main>
-        <header class="header d-flex justify-content-between">
+        <header class="header">
             <a href="#" class="header__logo">
                 <img src="img/Logo@2x.png" alt="">
             </a>
@@ -53,6 +99,10 @@
                     <span>Войти</span>
                 </a>
             </div>
+
+            <button type="button" class="header__burger">
+                <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11 16.745c0-.414.336-.75.75-.75h9.5c.414 0 .75.336.75.75s-.336.75-.75.75h-9.5c-.414 0-.75-.336-.75-.75zm-9-5c0-.414.336-.75.75-.75h18.5c.414 0 .75.336.75.75s-.336.75-.75.75h-18.5c-.414 0-.75-.336-.75-.75zm4-5c0-.414.336-.75.75-.75h14.5c.414 0 .75.336.75.75s-.336.75-.75.75h-14.5c-.414 0-.75-.336-.75-.75z" fill-rule="nonzero"/></svg>
+            </button>
         </header>
 
         <section class="hero">
@@ -93,8 +143,9 @@
                         <img src="img/calendar.png" alt="">
                     </label>
 
-                    <label class="order__label order__date">
+                    <label class="order__label order__date order__date-2">
                         <input type="text" placeholder="Обратно">
+                        <img src="img/calendar.png" alt="">
                     </label>
 
                     <label class="order__label order__count">
@@ -794,9 +845,211 @@
                 </div>
             </div>
         </section>
+
+
+        <section class="contacts">
+            <div class="container">
+                <div class="contacts__row">
+                    <a href="#" target="_blank" class="contacts__item">
+                        <img src="img/phone-call.png" alt="">
+                        Заказать звонок
+                    </a>
+
+                    <a href="#" target="_blank" class="contacts__item">
+                        <img src="img/chat.png" alt="">
+                        Чат
+                    </a>
+
+                    <div class="contacts__phone">
+                        <span>тел.</span>
+                        <div class="contacts__phone__inner">
+                            <p>Южно-Сахалинск</p>
+
+                            <a href="tel:88005555555">8 800 555 55 55</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contacts__mailing">
+                <div class="container">
+                    <div class="contacts__mailing__inner">
+                        <p>
+                            Подпишись на рассылку<br>и получай полезные сообщения
+                        </p>
+    
+                        <div class="contacts__mailing__field">
+                            <input type="email" placeholder="Ваш e-mail">
+                            <button type="button">
+                                <img src="img/right-arrow2.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-12">
+                        <h4>
+                            информация
+                        </h4>
+
+                        <ul class="footer__menu">
+                            <li>
+                                <a href="#">
+                                    О компании
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Обратная связь
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Пассажирам
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Справочный центр
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Новости
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Конфиденциальность
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4 col-12">
+                        <h4>
+                            направления
+                        </h4>
+
+                        <ul class="footer__menu">
+                            <li>
+                                <a href="#">
+                                    Москва - Сочи
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Ярославль - Туапсе
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Южно-Сахалинск - Сочи
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Санкт-Петербург - Москва
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Иваново - Кострома
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Пермь - Апатиты
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Южно-Сахалинск - Краснодар
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4 col-12">
+                        <h4>
+                            способы оплаты
+                        </h4>
+
+                        <div class="footer__payment">
+                            <img src="img/visa.png" alt="">
+                            <img src="img/mir-logo.png" alt="">
+                            <img src="img/maestro-logo.png" alt="">
+                            <img src="img/mastercard-logo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__bottom">
+                    <div class="footer__socials">
+                        <a href="#">
+                            <img src="img/VK.png" alt="">
+                            <span>ВКонтакте</span>
+                        </a>
+
+                        <a href="#">
+                            <img src="img/Tg.png" alt="">
+                            <span>Telegram</span>
+                        </a>
+
+                        <a href="#">
+                            <img src="img/Wa.png" alt="">
+                            <span>Whatsapp</span>
+                        </a>
+
+                        <a href="#">
+                            <img src="img/Viber.png" alt="">
+                            <span>Viber</span>
+                        </a>
+
+                        <a href="#">
+                            <img src="img/YouTube.png" alt="">
+                            <span>YouTube</span>
+                        </a>
+
+                        <a href="#">
+                            <img src="img/Inst.png" alt="">
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+
+
+                    <div class="footer__copy">
+                        ©️ 2024, Название компании<br>Сайт разработан
+                    </div>
+                </div>
+            </div>
+        </footer>
     </main>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
