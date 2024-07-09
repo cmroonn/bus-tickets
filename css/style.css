@@ -832,6 +832,7 @@ button, input {
 .faq__pic {
     position: sticky;
     top: 15px;
+    max-width: 95%;
 }
 
 @media (max-width: 768px) {
